@@ -11,7 +11,8 @@ orientacion a objetos. Se ha mejorado el número de temperaturas que acepta apli
 
 * [HTML Coversor](http://ull-esit-gradoii-pl.github.io/object-oriented-programming-in-js-pl-teguayco-oscar/)
 
-**Página del autor**
+**Páginas de los desarrolladores**
 
-* [Web Author]()
+* [Web Teguayco Gutiérrez González](http://alu0100825503.github.io/)
+* [Web Óscar David  Martín Cabrera](http://oscar-dmc.github.io/)
 
