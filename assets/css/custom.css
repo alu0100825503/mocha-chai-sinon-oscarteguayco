@@ -45,6 +45,10 @@ p{
     font-weight: bold;
 }
 
+.piePagina{
+    color:rgba(255, 255, 255, 1);
+}
+
 #fahrenheitImage{
     position: absolute;
     filter: opacity;
