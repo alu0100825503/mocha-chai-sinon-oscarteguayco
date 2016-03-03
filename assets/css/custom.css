@@ -51,6 +51,8 @@ p{
 
 #fahrenheitImage{
     position: absolute;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.8);
     filter: opacity;
     -webkit-filter:opacity(0);
     animation: 10s verFI  linear infinite alternate;
@@ -58,7 +60,9 @@ p{
 }
 #celsiusImage{
     position: absolute;
-     filter: opacity;
+    filter: opacity;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.8);
     -webkit-filter:opacity(0);
     animation: 10s verCI  linear infinite alternate;
     -webkit-animation: 10s verCI  linear infinite alternate;
@@ -66,6 +70,8 @@ p{
 
 #kelvinImagen{
     position: absolute;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.8);
     filter: opacity;
     -webkit-filter:opacity(0);
     animation: 10s verKI  linear infinite alternate;
@@ -81,7 +87,7 @@ p{
     0%{
         filter: opacity(1);
         -webkit-filter:opacity(1);
-        border-radius:100%;
+        /*border-radius:100%;*/
     }
     50%{
         filter: opacity(0);
@@ -101,7 +107,7 @@ p{
     50%{
         filter:opacity(1);
         -webkit-filter:opacity(1);
-        border-radius:100%;
+        /*border-radius:100%;*/
     }
     100%{
         filter: opacity(0);
@@ -121,6 +127,6 @@ p{
     100%{
         filter:opacity(1);
         -webkit-filter:opacity(1);
-        border-radius:100%;
+        /*border-radius:100%;*/
     }
 }
