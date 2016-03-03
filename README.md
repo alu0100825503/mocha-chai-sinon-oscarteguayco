@@ -1,17 +1,18 @@
 # Práctica OOP en JS
 
-Este repositorio aloja la práctica de conversión de tipos, realizada con html, css y javascript, usando POO y haciendo uso de la herencia en javascript.
-
+Práctica para mejorar el conversor de temperatura. El objetivo de esta práctica es aprender a desarrollar un código encapsulado en JavaScript, también hemos prácticado el concepto de 
+orientacion a objetos. Se ha mejorado el número de temperaturas que acepta apliandolo a la conversión en grados Kelvin.
 
 **Repositorio GitHuB**
 
-* [Repositorio]()
+* [Repositorio del conversor](https://github.com/ULL-ESIT-GRADOII-PL/object-oriented-programming-in-js-pl-teguayco-oscar)
 
 **Página de la práctica**
 
-* [Web]()
+* [HTML Coversor](http://ull-esit-gradoii-pl.github.io/object-oriented-programming-in-js-pl-teguayco-oscar/)
 
-**Página del autor**
+**Páginas de los desarrolladores**
 
-* [Web Author]()
+* [Web Teguayco Gutiérrez González](http://alu0100825503.github.io/)
+* [Web Óscar David  Martín Cabrera](http://oscar-dmc.github.io/)
 
