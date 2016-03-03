@@ -1,7 +1,7 @@
 (function(exports) {
   "use strict";
 
-  function Medida(valor,tipo)
+  var Medida = function(valor,tipo)
   {
     // Atributos PRIVADOS
     var _valor = valor;
@@ -17,12 +17,12 @@
                       };
   }
 
-  function Temperatura(valor,tipo)
+  var Temperatura = function(valor,tipo)
   {
     Medida.call(this, valor, tipo);
   }
 
-  function Celsius(valor)
+  var Celsius = function(valor)
   {
     Temperatura.call(this, valor, "c");
 		this.toFarenheit = function () {
@@ -34,7 +34,7 @@
 			              };
   }
 
-  function Farenheit(valor)
+  var Farenheit = function(valor)
   {
     Temperatura.call(this, valor, "f");
 		this.toCelsius = function () {
@@ -46,7 +46,7 @@
  			              };
   }
 
-  function Kelvin(valor)
+  var Kelvin = function(valor)
   {
     Temperatura.call(this, valor, "k");
     this.toFarenheit = function () {
@@ -85,16 +85,12 @@
 
     //elemento.innerHTML = valor;
     if (valor) {
-      var numero = valor[1],
+      var numero   = valor[1],
           tipoFrom = valor[2].toLowerCase(),
           tipoTo   = valor[3].toLowerCase();
 
       numero = parseFloat(numero);
-      /*  elemento.innerHTML = numero;
-        elemento.innerHTML = tipoFrom;
-        elemento.innerHTML = tipoTo;    */
-     
-     console.log(numero + tipoFrom + "to" + tipoTo);
+      console.log(numero + tipoFrom + "to" + tipoTo);
 
       switch (tipoFrom) {
         case 'c':
@@ -102,7 +98,7 @@
           if (tipoTo == 'f')
             elemento.innerHTML = celsius.toFarenheit().toFixed(2) + " Farenheit";
           else if (tipoTo == 'k')
-            elemento.innerHTML = celsis.toKelvin(),toFixed(2) + " Kelvin";
+            elemento.innerHTML = celsius.toKelvin().toFixed(2) + " Kelvin";
           //elemento.innerHTML = "HOLA";
           break;
           
