@@ -29,8 +29,22 @@ span {
     color: green;
 }
 
+#fahrenheitImage{
+    position: absolute;
+    opacity: 0;
+}
+#celsiusImage{
+    position: absolute;
+    opacity: 0;
+}
+
+#kelvinImagen{
+    position: absolute;
+    opacity: 0;
+}
 @media (max-width: 550px) {
     footer {
         text-align: center;
     }
 }
+
