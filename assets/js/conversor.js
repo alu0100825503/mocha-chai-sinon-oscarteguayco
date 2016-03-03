@@ -96,26 +96,39 @@
      
      console.log(numero + tipoFrom + "to" + tipoTo);
 
-     /* switch (tipo) {
+      switch (tipoFrom) {
         case 'c':
           var celsius = new Celsius(numero);
-          elemento.innerHTML = celsius.toFarenheit().toFixed(2) + " Farenheit";
+          if (tipoTo == 'f')
+            elemento.innerHTML = celsius.toFarenheit().toFixed(2) + " Farenheit";
+          else if (tipoTo == 'k')
+            elemento.innerHTML = celsis.toKelvin(),toFixed(2) + " Kelvin";
+          //elemento.innerHTML = "HOLA";
           break;
+          
         case 'f':
           var farenheit = new Farenheit(numero);
-          elemento.innerHTML = farenheit.toCelsius().toFixed(2) + " Celsius";
+          if (tipoTo == 'c')
+            elemento.innerHTML = farenheit.toCelsius().toFixed(2) + " Celsius";
+          else if (tipoTo == 'k')
+            elemento.innerHTML = farenheit.toKelvin().toFixed(2) + " Kelvin";
           break;
+          
         case 'k':
           var kelvin = new Kelvin(valor);
-          elemento.innerHTML = kelvin.toCelsius().toFixed(2) + " Kelvin";
+          if (tipoTo == 'c')
+            elemento.innerHTML = kelvin.toCelsius().toFixed(2) + " Celsius";
+          else if (tipoTo == 'f')
+            elemento.innerHTML = kelvin.toFarenheit().toFixed(2) + " Farenheit";
           break;
+          
         default:
-          elemento.innerHTML = numero;*/
-    
+          elemento.innerHTML = "Tipo no reconocido";
+      }
     }
     
-    /*else
-     // elemento.innerHTML = "Conversión fallida. Intente algo como '32F to C'";
+    else
+      elemento.innerHTML = "Conversión fallida. Intente algo como '32F to C'";
      //elemento.innerHTML = "Conversión fallida. Intente algo como '32F to C'";*/
      
   }
