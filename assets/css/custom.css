@@ -1,5 +1,5 @@
 html {
-    background-color: #eee;
+    background:url(../images/fondo.jpg) no-repeat;
 }
 
 
@@ -22,11 +22,22 @@ footer a {
 }
 
 h4 {
-    font-weight: 500;
+    font-weight: 700;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius:20px;
+    background-color:rgba(17, 64, 64, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 span {
     color: green;
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
 }
 
 #fahrenheitImage{
