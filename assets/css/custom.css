@@ -31,7 +31,8 @@ span {
 
 #fahrenheitImage{
     position: absolute;
-    opacity: 0;
+    filter: opacity(1);
+    animation: verFI 3s linear infinite;
 }
 #celsiusImage{
     position: absolute;
@@ -48,3 +49,11 @@ span {
     }
 }
 
+@keyframes verFI{
+    33%{
+        filter:opacity(0) ;
+    }
+    66%{
+        filter:opacity(1);
+    }
+}
