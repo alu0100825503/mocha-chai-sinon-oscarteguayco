@@ -73,6 +73,7 @@
   exports.Temperatura = Temperatura;
   exports.Celsius = Celsius;
   exports.Farenheit = Farenheit;
+  exports.Kelvin = Kelvin;
 
   exports.convertir = function() {
     var valor     = document.getElementById('convert').value;
@@ -82,8 +83,16 @@
     var regexp    = /^\s*([-+]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([fkc])\s*(?:to)?\s*([fkc])$/i;
     //regexp = /^\s*([-+]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([a-zA-Z]+ (?:(to)*) ([a-zA-Z]+))\s*$/i;
     valor     = valor.match(regexp);
+    
+    /* var regexp = XRegExp('(?<numero> [-+]?[0-9]+(\.[0-9]+)?(?:e[+-]?[0-9]+)?) # numero \n' +
+               '(?<tipoFrom> [fckFCK]) # entrada \n' +
+               '([ ]*) \n' +
+               '(?<to> (to))? # to \n' +
+               '([ ]*) \n' +
+               '(?<tipoTo> [fckFCK]) # salida \n','x');
 
-    //elemento.innerHTML = valor;
+    valor = XRegExp.exec(valor, regexp);        */
+
     if (valor) {
       var numero   = valor[1],
           tipoFrom = valor[2].toLowerCase(),
@@ -99,7 +108,6 @@
             elemento.innerHTML = celsius.toFarenheit().toFixed(2) + " Farenheit";
           else if (tipoTo == 'k')
             elemento.innerHTML = celsius.toKelvin().toFixed(2) + " Kelvin";
-          //elemento.innerHTML = "HOLA";
           break;
           
         case 'f':
@@ -111,7 +119,7 @@
           break;
           
         case 'k':
-          var kelvin = new Kelvin(valor);
+          var kelvin = new Kelvin(numero);
           if (tipoTo == 'c')
             elemento.innerHTML = kelvin.toCelsius().toFixed(2) + " Celsius";
           else if (tipoTo == 'f')
@@ -125,8 +133,5 @@
     
     else
       elemento.innerHTML = "Conversión fallida. Intente algo como '32F to C'";
-     //elemento.innerHTML = "Conversión fallida. Intente algo como '32F to C'";*/
-     
   }
-
 })(this);
