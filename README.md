@@ -5,7 +5,7 @@ orientacion a objetos. Se ha mejorado el número de temperaturas que acepta apli
 
 **Repositorio GitHuB**
 
-* [Repositorio del conversor](https://github.com/ULL-ESIT-GRADOII-PL/object-oriented-programming-in-js-pl-teguayco-oscar)
+* [Repositorio del conversor](https://github.com/ULL-ESIT-GRADOII-PL/eliminacion-del-switch-oscarteguayco)
 
 **Página de la práctica**
 
