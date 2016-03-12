@@ -9,7 +9,7 @@ orientacion a objetos. Se ha mejorado el número de temperaturas que acepta apli
 
 **Página de la práctica**
 
-* [HTML Coversor](http://ull-esit-gradoii-pl.github.io/object-oriented-programming-in-js-pl-teguayco-oscar/)
+* [HTML Coversor](http://alu0100825503.github.io/eliminacion-del-switch-oscarteguayco/)
 
 **Páginas de los desarrolladores**
 
