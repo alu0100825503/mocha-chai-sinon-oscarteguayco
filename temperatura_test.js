@@ -11,14 +11,14 @@ describe("Medida", function() {
       expect(med.getTipo()).to.equal("c");
     });
   });
+  
   describe("#convertir", function() {
-    it("should convert a temperature correctly", function() {
+    it("should convert '32f' to Celsius correctly", function() {
       var value = Medida.convertir("32f to c");
       expect(value).to.equal("0.00 Celsius");
     });
   });
 });
-
 
 describe("Temperatura", function() {
   describe("constructor", function() {
