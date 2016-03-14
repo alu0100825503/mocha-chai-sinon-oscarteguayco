@@ -61,3 +61,32 @@ describe("Fahrenheit", function(){
     });  
   });
 });
+
+describe("Celsius", function(){
+  describe("constructor", function(){
+    it("should have a value", function() {
+      var cel = new Celsius(15);
+      expect(cel.getValor()).to.equal(15);
+    });
+    it("should have a type", function() {
+      var cel = new Celsius(15);
+      expect(cel.getTipo()).to.equal("c");  
+    });
+    it("should have a name", function() {
+      var cel = new Celsius(32);
+      expect(cel.name).to.equal("Celsius");  
+    });
+  });
+  describe("#toFahrenheit", function() {
+    it("should convert Celsius to Fahrenheit", function(){
+      var value = new Celsius(0).toFahrenheit();
+      expect(value).to.equal(32);
+    });  
+  });
+  describe("#toKelvin", function() {
+    it("should convert Celsius to Kelvin", function(){
+      var value = new Celsius(0).toKelvin();
+      expect(value).to.equal(273.15);
+    });  
+  });
+});
