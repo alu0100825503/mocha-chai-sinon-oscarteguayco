@@ -1,10 +1,10 @@
 var expect = chai.expect;
 
-describe("Conversor", function() {
+describe("Temperatura", function() {
   describe("constructor", function() {
     it("should have a value", function() {
-      var medida = new Medida("32F");
-      expect(medida.getValue()).to.equal("32");
+      var temp = new Temperatura("32", "f");
+      expect(temp.getValor()).to.equal("32");
     });
   });
 });

@@ -6,6 +6,7 @@
 													   '(?<tipo> \w)                                       # tipo', 'x');
    
         if (!tipo) {  
+            console.log(valor);
             var match = XRegExp.exec(valor, regexp);  
             console.log(match);
             var _valor = match.numero;
