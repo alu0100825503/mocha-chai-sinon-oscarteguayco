@@ -11,11 +11,18 @@ describe("Medida", function() {
       expect(med.getTipo()).to.equal("c");
     });
   });
-  
   describe("#convertir", function() {
     it("should convert '32f' to Celsius correctly", function() {
       var value = Medida.convertir("32f to c");
       expect(value).to.equal("0.00 Celsius");
+    });
+  });
+  describe("#match", function() {
+    it("should return a correct matching", function() {
+      var match = Medida.match("32f to k");
+      expect(match.numero).to.equal("32");
+      expect(match.tipo).to.equal("f");
+      expect(match.destino).to.equal("k");
     });
   });
 });
@@ -109,7 +116,7 @@ describe("Kelvin", function(){
   describe("#toFahrenheit", function() {
     it("should convert Kelvin to Fahrenheit", function(){
       var value = new Kelvin(273.15).toFahrenheit();
-      expect(value).to.equal(0);
+      expect(value).to.equal(32);
     });  
   });
   describe("#toCelsius", function() {
