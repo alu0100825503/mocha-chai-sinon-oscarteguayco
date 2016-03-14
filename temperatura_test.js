@@ -90,3 +90,32 @@ describe("Celsius", function(){
     });  
   });
 });
+
+describe("Kelvin", function(){
+  describe("constructor", function(){
+    it("should have a value", function() {
+      var kel = new Kelvin(10);
+      expect(kel.getValor()).to.equal(10);
+    });
+    it("should have a type", function() {
+      var kel = new Kelvin(10);
+      expect(kel.getTipo()).to.equal("k");  
+    });
+    it("should have a name", function() {
+      var kel = new Kelvin(10);
+      expect(kel.name).to.equal("Kelvin");  
+    });
+  });
+  describe("#toFahrenheit", function() {
+    it("should convert Kelvin to Fahrenheit", function(){
+      var value = new Kelvin(273.15).toFahrenheit();
+      expect(value).to.equal(0);
+    });  
+  });
+  describe("#toCelsius", function() {
+    it("should convert Kelvin to Celsius", function(){
+      var value = new Kelvin(273.15).toCelsius();
+      expect(value).to.equal(0);
+    });  
+  });
+});
