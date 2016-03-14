@@ -48,7 +48,7 @@
           var source = new measures[tipo](numero);              // new Fahrenheit(32)
           console.log(source);
           var target = "to" + measures[destino].name;           // "toCelsius"
-          return source[target]().toFixed(2) + " " + target;    // "0 Celsius"
+          return source[target]().toFixed(2) + " " + measures[destino].name;    // "0 Celsius"
         }
         catch(err) {
           console.log(err);
