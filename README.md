@@ -1,11 +1,12 @@
-# Práctica OOP en JS
+# Práctica Mocha y Chai
 
-Práctica para mejorar el conversor de temperatura. El objetivo de esta práctica es aprender a desarrollar un código encapsulado en JavaScript, también hemos prácticado el concepto de 
-orientacion a objetos. Se ha mejorado el número de temperaturas que acepta apliandolo a la conversión en grados Kelvin.
+Se realizan pruebas a la práctica anterior de "Eliminación del Switch Smell" utilizando Mocha y Chai. Además, se añade un gulpfile
+para la automatización de tareas (minify, para compactar ficheros; y clean para limpiar el directorio destino de los ficheros compactados).
+
 
 **Repositorio GitHuB**
 
-* [Repositorio del conversor](https://github.com/ULL-ESIT-GRADOII-PL/eliminacion-del-switch-oscarteguayco)
+* [Repositorio de la práctica](https://github.com/ULL-ESIT-GRADOII-PL/mocha-chai-sinon-oscarteguayco)
 
 **Página de la práctica**
 
