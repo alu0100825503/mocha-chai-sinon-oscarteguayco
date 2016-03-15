@@ -2,6 +2,10 @@ var expect = chai.expect;
 
 describe("Medida", function() {
   describe("constructor", function() {
+     it("should have not type", function() {
+      var med = new Medida("0.56f");
+      expect(med.getValor()).to.equal(0.56);
+    });
     it("should have a value", function() {
       var med = new Medida(0.56, "c");
       expect(med.getValor()).to.equal(0.56);
@@ -15,6 +19,10 @@ describe("Medida", function() {
     it("should convert '32f' to Celsius correctly", function() {
       var value = Medida.convertir("32f to c");
       expect(value).to.equal("0.00 Celsius");
+    });
+    it("should show an error invalid input", function() {
+      var value = Medida.convertir("lz to c");
+      expect(value).to.equal("Introduzca una temperatura válida: 330e-1 F to C");
     });
   });
   describe("#match", function() {
@@ -126,3 +134,4 @@ describe("Kelvin", function(){
     });  
   });
 });
+
