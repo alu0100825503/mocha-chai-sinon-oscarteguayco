@@ -2,14 +2,14 @@
     "use strict";
 
     function Medida(valor, tipo) {
-        var regexp = XRegExp('(?<number> [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?\\s*) # valor \n' +
-													   '(?<tipo> \w)                                       # tipo', 'x');
+        var regexp = XRegExp('(?<numero> [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?\\s*) # valor \n' +
+													   '(?<tipo> \\w)                        # tipo de entrada   \n', 'x');
    
         if (!tipo) {  
             console.log(valor);
             var match = XRegExp.exec(valor, regexp);  
             console.log(match);
-            var _valor = match.numero;
+            var _valor = parseFloat(match.numero);
             var _tipo = match.tipo;
             
         } else {
@@ -43,17 +43,9 @@
             console.log("tipo: " + tipo);
             console.log("destino: " + destino);
         
-        try {
-          console.log("en try");
           var source = new measures[tipo](numero);                              // new Fahrenheit(32)
-          console.log(source);
           var target = "to" + measures[destino].name;                           // "toCelsius"
           return source[target]().toFixed(2) + " " + measures[destino].name;    // "0 Celsius"
-        }
-        catch(err) {
-          console.log(err);
-          return 'Desconozco como convertir desde "' + tipo + '" hasta "' + destino + '"';
-        }
       }
       else
         return "Introduzca una temperatura válida: 330e-1 F to C"; 
