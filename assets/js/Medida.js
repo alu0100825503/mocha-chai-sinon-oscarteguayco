@@ -2,14 +2,14 @@
     "use strict";
 
     function Medida(valor, tipo) {
-        var regexp = XRegExp('(?<number> [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?\\s*) # valor \n' +
-													   '(?<tipo> \w)                                       # tipo', 'x');
+        var regexp = XRegExp('(?<numero> [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?\\s*) # valor \n' +
+													   '(?<tipo> \\w)                        # tipo de entrada   \n', 'x');
    
         if (!tipo) {  
             console.log(valor);
             var match = XRegExp.exec(valor, regexp);  
             console.log(match);
-            var _valor = match.numero;
+            var _valor = parseFloat(match.numero);
             var _tipo = match.tipo;
             
         } else {
