@@ -2,9 +2,13 @@ var expect = chai.expect;
 
 describe("Medida", function() {
   describe("constructor", function() {
-     it("should have not type", function() {
+     it("should have a value (one argument's constructor)", function() {
       var med = new Medida("0.56f");
       expect(med.getValor()).to.equal(0.56);
+    });
+    it("should have a type (one argument's constructor)", function() {
+      var med = new Medida("0.56f");
+      expect(med.getTipo()).to.equal("f");
     });
     it("should have a value", function() {
       var med = new Medida(0.56, "c");
