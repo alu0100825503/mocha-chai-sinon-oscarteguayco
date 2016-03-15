@@ -16,6 +16,10 @@ describe("Medida", function() {
       var value = Medida.convertir("32f to c");
       expect(value).to.equal("0.00 Celsius");
     });
+    it("should show an error invalid input", function() {
+      var value = Medida.convertir("lz to c");
+      expect(value).to.equal("Introduzca una temperatura válida: 330e-1 F to C");
+    });
   });
   describe("#match", function() {
     it("should return a correct matching", function() {
@@ -126,3 +130,4 @@ describe("Kelvin", function(){
     });  
   });
 });
+
